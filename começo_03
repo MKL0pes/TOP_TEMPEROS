@@ -1,0 +1,70 @@
+CREATE TABLE carnes_artesanais (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,           
+sabor_carne VARCHAR(20) NOT NULL,           
+recheio VARCHAR(20) ,             
+quantidade int ,  
+preço_unitario DECIMAL (6, 2) NOT NULL,
+peso_unitario FLOAT NOT NULL ,
+espessura VARCHAR(20)
+);
+
+CREATE TABLE Polpas (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,      
+sabor_polpa VARCHAR(20) NOT NULL,
+quantidade int ,
+preço_unitario DECIMAL (6, 2) NOT NULL,
+peso_unitario FLOAT NOT NULL
+);
+
+CREATE TABLE Paes_e_biscoitos (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,
+sabor VARCHAR(20) NOT NULL,
+quantidade int ,
+preço_unitario DECIMAL (6, 2) NOT NULL,
+peso_unitario FLOAT NOT NULL
+);
+
+CREATE TABLE temperos_e_ervas ( 
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,    
+sabor VARCHAR(20) NOT NULL,
+quantidade int ,
+preço_unitario DECIMAL (6, 2) NOT NULL,
+peso_unitario FLOAT NOT NULL
+);
+
+CREATE TABLE especiarias (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,
+categoria VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL (6, 2) NOT NULL,
+peso_unitario FLOAT NOT NULL
+); 
+
+CREATE TABLE pomadas (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,
+quantidade int ,
+preço_unitario DECIMAL (6, 2) NOT NULL,
+peso_unitario FLOAT NOT NULL
+);
+
+CREATE TABLE xaropes (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,
+quantidade int ,
+preço_unitario DECIMAL (6, 2) NOT NULL,
+volume VARCHAR(20) 
+);
+
+CREATE TABLE oleos_essenciais (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) NOT NULL,
+quantidade int ,
+preço_unitario DECIMAL (6, 2) NOT NULL, 
+volume VARCHAR(20)
+);
