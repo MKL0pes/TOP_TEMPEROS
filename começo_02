@@ -1,0 +1,70 @@
+CREATE TABLE carnes_artesanais (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,           
+sabor_carne VARCHAR(20) ,           
+recheio VARCHAR(20) ,             
+quantidade int ,  
+preço_unitario DECIMAL ,
+peso_unitario FLOAT ,
+espessura VARCHAR(20)
+);
+
+CREATE TABLE Polpas (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,      
+sabor_polpa VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL ,
+peso_unitario FLOAT
+);
+
+CREATE TABLE Paes_e_biscoitos (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,
+sabor VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL ,
+peso_unitario FLOAT
+);
+
+CREATE TABLE temperos_e_ervas ( 
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,    
+sabor VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL ,
+peso_unitario FLOAT
+);
+
+CREATE TABLE especiaria (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,
+categoria VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL ,
+peso_unitario FLOAT
+); 
+
+CREATE TABLE pomadas (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL ,
+peso_unitario FLOAT
+);
+
+CREATE TABLE xaropes (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL ,
+volume VARCHAR(20)
+);
+
+CREATE TABLE oleos_essenciais (
+ID INTEGER PRIMARY KEY ,
+tipo VARCHAR(20) ,
+quantidade int ,
+preço_unitario DECIMAL , 
+volume VARCHAR(20)
+);
