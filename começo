@@ -1,0 +1,65 @@
+create database CADASTRO;
+
+CREATE TABLE carnes_artesanais (
+ID ,
+tipo ,           --linguiça ,rocabole
+sabor_carne,           --pernil frango 
+recheio,         --tomate seco provolone    
+quantidade int,  
+preço_unitario DECIMAL,
+peso,
+espessura,
+
+CREATE TABLE Polpas (
+ID,
+tipo,      --fruta congelada, polpa pacote
+sabor_polpa ,
+quantidade int,
+preço_unitario DECIMAL,
+peso_unitario
+
+CREATE TABLE Paes_e_biscoitos (
+ID,
+tipo,
+sabor,
+quantidade int,
+preço_unitario DECIMAL,
+peso_unitario
+
+CREATE TABLE temperos_e_ervas ( 
+ID,
+tipo,   --ervas, temperos , 
+sabor,
+quantidade,
+preço_unitario DECIMAL,
+peso_unitario
+
+
+CREATE TABLE especiaria (
+ID,
+tipo,
+categoria,
+quantidade ,
+preço_unitario DECIMAL,
+peso_unitario  
+
+CREATE TABLE pomadas (
+ID,
+tipo,
+quantidade,
+preço_unitario DECIMAL,
+peso_unitario,
+
+CREATE TABLE xaropes (
+ID,
+tipo,
+quantidade,
+preço_unitario DECIMAL,
+volume
+
+CREATE TABLE oleos_essenciais (
+ID,
+tipo,
+quantidade,
+preço_unitario DECIMAL, 
+volume
