@@ -1,0 +1,66 @@
+INSERT INTO carnes_artesanais (tipo, sabor_carne, recheio, preco_unitario, peso_unitario, espessura_cm) 
+VALUES 
+-- HAMBÚRGUERES (480g)
+('Hambúrguer', 'Bovino', NULL, 0.00, 0.480, NULL),
+('Hambúrguer', 'Frango', NULL, 0.00, 0.480, NULL),
+('Hambúrguer', 'Fitness', NULL, 0.00, 0.480, NULL),
+('Hambúrguer', 'Pernil', NULL, 0.00, 0.480, NULL),
+
+-- LINGUIÇAS (500g) - PURA, PIMENTA, BIQUINHO (Com variação de espessura)
+('Linguiça', 'Pernil', 'Pura', 0.00, 0.500, 1.5), -- Fina
+('Linguiça', 'Pernil', 'Pura', 0.00, 0.500, 3.0), -- Grossa
+('Linguiça', 'Frango', 'Pura', 0.00, 0.500, 1.5), -- Fina
+('Linguiça', 'Frango', 'Pura', 0.00, 0.500, 3.0), -- Grossa
+
+('Linguiça', 'Pernil', 'Pimenta', 0.00, 0.500, 1.5),
+('Linguiça', 'Pernil', 'Pimenta', 0.00, 0.500, 3.0),
+('Linguiça', 'Pernil', 'Biquinho', 0.00, 0.500, 1.5),
+('Linguiça', 'Pernil', 'Biquinho', 0.00, 0.500, 3.0),
+
+-- LINGUIÇAS (500g) - DEMAIS RECHEIOS (Sem espessura específica)
+('Linguiça', 'Pernil', 'Provolone', 0.00, 0.500, NULL),
+('Linguiça', 'Frango', 'Provolone', 0.00, 0.500, NULL),
+('Linguiça', 'Pernil', 'Tomate Seco', 0.00, 0.500, NULL),
+('Linguiça', 'Frango', 'Tomate Seco', 0.00, 0.500, NULL),
+('Linguiça', 'Pernil', 'Marguerita', 0.00, 0.500, NULL),
+('Linguiça', 'Pernil', 'Jiló', 0.00, 0.500, NULL),
+('Linguiça', 'Pernil', 'Queijo e Azeitona', 0.00, 0.500, NULL),
+('Linguiça', 'Pernil', 'A Moda', 0.00, 0.500, NULL),
+('Linguiça', 'Pernil', 'Pequi', 0.00, 0.500, NULL),
+
+-- ROCAMBOLES (Peso estimado: 1kg)
+('Rocambole', 'Frango', 'Bacon', 0.00, 1.000, NULL),
+('Rocambole', 'Frango', 'Tomate Seco', 0.00, 1.000, NULL),
+('Rocambole', 'Frango', 'Provolone', 0.00, 1.000, NULL),
+('Rocambole', 'Pernil', 'Bacon', 0.00, 1.000, NULL),
+('Rocambole', 'Pernil', 'Tomate Seco', 0.00, 1.000, NULL),
+('Rocambole', 'Pernil', 'Provolone', 0.00, 1.000, NULL),
+
+-- ALMÔNDEGAS (Peso estimado: 500g)
+('Almôndega', 'Pernil', NULL, 0.00, 0.500, NULL),
+('Almôndega', 'Frango', NULL, 0.00, 0.500, NULL),
+('Almôndega', 'Bovina', NULL, 0.00, 0.500, NULL);
+
+
+
+
+-- 1. ADICIONANDO OS NOVOS PRODUTOS
+INSERT INTO carnes_artesanais (tipo, sabor_carne, recheio, preco_unitario, peso_unitario, espessura_cm) 
+VALUES 
+-- Novas Linguiças com Bacon (Assumi as opções de Pernil e Frango)
+('Linguiça', 'Pernil', 'Bacon', 0.00, 0.500, NULL),
+('Linguiça', 'Frango', 'Bacon', 0.00, 0.500, NULL),
+
+-- Novas versões dos Rocamboles com 500g (os de 1kg já estão no banco)
+('Rocambole', 'Frango', 'Bacon', 0.00, 0.500, NULL),
+('Rocambole', 'Frango', 'Tomate Seco', 0.00, 0.500, NULL),
+('Rocambole', 'Frango', 'Provolone', 0.00, 0.500, NULL),
+('Rocambole', 'Pernil', 'Bacon', 0.00, 0.500, NULL),
+('Rocambole', 'Pernil', 'Tomate Seco', 0.00, 0.500, NULL),
+('Rocambole', 'Pernil', 'Provolone', 0.00, 0.500, NULL);
+
+-- 2. CORRIGINDO O PESO DAS ALMÔNDEGAS
+-- O comando UPDATE vai procurar tudo que for "Almôndega" e mudar o peso para 0.600 (600g)
+UPDATE carnes_artesanais
+SET peso_unitario = 0.600
+WHERE tipo = 'Almôndega';
