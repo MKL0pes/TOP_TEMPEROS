@@ -1,0 +1,36 @@
+-- 1. Limpa a tabela e zera os IDs
+
+TRUNCATE TABLE polpas;
+
+-- 2. Insere as Polpas e as Frutas Congeladas corretas
+INSERT INTO polpas (tipo, sabor_polpa, preco_unitario, peso_unitario) 
+VALUES 
+
+-- CATEGORIA: POLPAS (1kg)
+('Polpa', 'Maracujá', 0.00, 1.000),
+('Polpa', 'Umbu', 0.00, 1.000),
+('Polpa', 'Graviola', 0.00, 1.000),
+('Polpa', 'Tamarindo', 0.00, 1.000),
+('Polpa', 'Uva', 0.00, 1.000),
+('Polpa', 'Cajá', 0.00, 1.000),
+('Polpa', 'Caju', 0.00, 1.000),
+('Polpa', 'Acerola', 0.00, 1.000),
+('Polpa', 'Acerola com Laranja', 0.00, 1.000),
+('Polpa', 'Seriguela', 0.00, 1.000),
+('Polpa', 'Cacau', 0.00, 1.000),
+('Polpa', 'Cupuaçu', 0.00, 1.000),
+('Polpa', 'Goiaba', 0.00, 1.000),
+('Polpa', 'Abacaxi', 0.00, 1.000),
+('Polpa', 'Abacaxi com Hortelã', 0.00, 1.000),
+('Polpa', 'Manga', 0.00, 1.000),
+
+-- CATEGORIA: POLPAS - AÇAÍ (400g)
+('Polpa', 'Açaí', 0.00, 0.400),
+
+-- CATEGORIA: FRUTAS CONGELADAS (1kg)
+('Fruta Congelada', 'Morango', 0.00, 1.000),
+('Fruta Congelada', 'Amora', 0.00, 1.000),
+('Fruta Congelada', 'Mirtilo', 0.00, 1.000),
+('Fruta Congelada', 'Framboesa', 0.00, 1.000),
+('Fruta Congelada', 'Amorango', 0.00, 1.000),
+('Fruta Congelada', 'Frutas Vermelhas', 0.00, 1.000);
