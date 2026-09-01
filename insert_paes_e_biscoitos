@@ -1,0 +1,21 @@
+INSERT INTO paes_e_biscoitos (tipo, sabor, preco_unitario, peso_unitario) 
+VALUES 
+-- CATEGORIA: PÃES
+('Pão', 'Pão de Queijo', 0.00, 1.000),
+('Pão', 'Pão de Queijo', 0.00, 0.500),
+('Pão', 'Pão de Queijo com Goiabada', 0.00, 0.400),
+('Pão', 'Pão de Tapioca com Coco', 0.00, 0.400),
+('Pão', 'Biscoito Meia Lua', 0.00, 0.400),
+('Pão', 'Pão de Tapioca com Queijo', 0.00, 0.400),
+('Pão', 'Pão de Queijo Zero Lactose', 0.00, 0.400),
+
+-- CATEGORIA: BISCOITOS E SALGADOS (Todos com 1kg)
+('Biscoito', 'Biscoito de Queijo', 0.00, 1.000),
+('Biscoito', 'Biscoito Suíço', 0.00, 1.000),
+('Biscoito', 'Palito de Queijo', 0.00, 1.000),
+('Biscoito', 'Romeu e Julieta', 0.00, 1.000),
+('Biscoito', 'Mini Esfirra de Carne', 0.00, 1.000),
+('Biscoito', 'Mini Esfirra Presunto e Queijo', 0.00, 1.000),
+('Biscoito', 'Mini Enroladinho de Salsicha', 0.00, 1.000),
+('Biscoito', 'Mini Esfirra Frango', 0.00, 1.000),
+('Biscoito', 'Kibe', 0.00, 1.000);
