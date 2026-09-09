@@ -1,0 +1,71 @@
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario, espessura, preco_venda) 
+VALUES 
+('Hambúrguer', 'Bovino', NULL, 0.00, 0.480, NULL, NULL),
+('Hambúrguer', 'Frango', NULL, 0.00, 0.480, NULL, NULL),
+('Hambúrguer', 'Fitness', NULL, 0.00, 0.480, NULL, NULL),
+('Hambúrguer', 'Pernil', NULL, 0.00, 0.480, NULL, NULL);
+
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario) 
+VALUES 
+('Linguiça', 'Pernil', 'Pura', 0.00, 0.500), 
+('Linguiça', 'Frango', 'Pura', 0.00, 0.500), 
+('Linguiça', 'Pernil', 'Pimenta', 0.00, 0.500),
+('Linguiça', 'Pernil', 'Biquinho', 0.00, 0.500);
+
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario, espessura) 
+VALUES 
+
+('Linguiça', 'Pernil', 'Pura', 0.00, 0.500, 'fina'), 
+('Linguiça', 'Frango', 'Pura', 0.00, 0.500, 'fina'), 
+('Linguiça', 'Pernil', 'Pimenta', 0.00, 0.500, 'fina'),
+('Linguiça', 'Pernil', 'Biquinho', 0.00, 0.500, 'fina');
+
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario) 
+VALUES
+
+('Linguiça', 'Pernil', 'Provolone', 0.00, 0.500),
+('Linguiça', 'Frango', 'Provolone', 0.00, 0.500),
+('Linguiça', 'Pernil', 'Tomate Seco', 0.00, 0.500),
+('Linguiça', 'Frango', 'Tomate Seco', 0.00, 0.500),
+('Linguiça', 'Pernil', 'Marguerita', 0.00, 0.500),
+('Linguiça', 'Pernil', 'Jiló', 0.00, 0.500);
+
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario) 
+VALUES
+
+('Linguiça', 'Pernil', 'Queijo e Azeitona', 0.00, 0.500),
+('Linguiça', 'Pernil', 'A Moda', 0.00, 0.500),
+('Linguiça', 'Pernil', 'Pequi', 0.00, 0.500);
+
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario) 
+VALUES
+
+('Rocambole', 'Frango', 'Bacon', 0.00, 1.000),
+('Rocambole', 'Frango', 'Tomate Seco', 0.00, 1.000),
+('Rocambole', 'Frango', 'Provolone', 0.00, 1.000),
+('Rocambole', 'Pernil', 'Bacon', 0.00, 1.000),
+('Rocambole', 'Pernil', 'Tomate Seco', 0.00, 1.000),
+('Rocambole', 'Pernil', 'Provolone', 0.00, 1.000);
+
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario) 
+VALUES
+
+('Almôndega', 'Pernil', NULL, 0.00, 0.600),
+('Almôndega', 'Frango', NULL, 0.00, 0.600),
+('Almôndega', 'Bovina', NULL, 0.00, 0.600);
+
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario) 
+VALUES
+
+('Linguiça', 'Pernil', 'Bacon', 0.00, 0.500),
+('Linguiça', 'Frango', 'Bacon', 0.00, 0.500);
+ 
+INSERT INTO carnes_artesanais (categoria, sabor_carne, recheio, preco_compra, peso_unitario, espessura) 
+VALUES  
+
+('Rocambole', 'Frango', 'Bacon', 0.00, 0.500, 'fina'),
+('Rocambole', 'Frango', 'Tomate Seco', 0.00, 0.500, 'fina'),
+('Rocambole', 'Frango', 'Provolone', 0.00, 0.500, 'fina'),
+('Rocambole', 'Pernil', 'Bacon', 0.00, 0.500, 'fina'),
+('Rocambole', 'Pernil', 'Tomate Seco', 0.00, 0.500, 'fina'),
+('Rocambole', 'Pernil', 'Provolone', 0.00, 0.500, 'fina');
